@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="860.0" prefWidth="1325.0" style="-fx-background-color: #F3F3F3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.AnalyzeController">
+    <children>
+      <HBox layoutY="73.0" prefHeight="34.0" prefWidth="1298.0" style="-fx-background-color: #303336;" />
+      <Button fx:id="BackButton" layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackButtonHandler" onMouseEntered="#BackButtonHover" onMouseExited="#BackButtonExit" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: #303336;" text="◄" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <padding>
+            <Insets top="4.0" />
+         </padding>
+      </Button>
+      <HBox layoutX="50.0" layoutY="787.0" prefHeight="9.0" prefWidth="355.0" style="-fx-background-color: #303336;" />
+      <Label layoutX="320.0" layoutY="181.0" prefHeight="27.0" prefWidth="209.0" text="Gender:" textFill="#52585d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutY="818.0" prefHeight="9.0" prefWidth="1298.0" style="-fx-background-color: #303336;" />
+      <Label fx:id="GenderLabel" layoutX="425.0" layoutY="181.0" prefHeight="27.0" prefWidth="189.0" textFill="#00907d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="20.0" prefHeight="37.0" prefWidth="346.0" text="New Customer Analysis" textFill="#f2612d">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="GenderDropDown" layoutX="50.0" layoutY="166.0" onAction="#GenderDropDownHandler" prefHeight="57.0" prefWidth="245.0" promptText="Select Gender" />
+      <Label layoutX="320.0" layoutY="259.0" prefHeight="27.0" prefWidth="209.0" text="Date of Birth:" textFill="#52585d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="DateOfBirthLabel" layoutX="480.0" layoutY="259.0" prefHeight="27.0" prefWidth="189.0" textFill="#00907d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="336.0" prefHeight="27.0" prefWidth="209.0" text="Marital Status:" textFill="#52585d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="MaritalStatusLabel" layoutX="496.0" layoutY="336.0" prefHeight="27.0" prefWidth="189.0" textFill="#00907d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="DateOfBirthPicker" layoutX="50.0" layoutY="244.0" onAction="#DateOfBirthHandler" prefHeight="57.0" prefWidth="245.0" promptText="Date of Birth" />
+      <ComboBox fx:id="MaritalStatusDropDown" layoutX="50.0" layoutY="321.0" onAction="#MaritalStatusDropDownHandler" prefHeight="57.0" prefWidth="245.0" promptText="Select Marital Status" />
+      <Label layoutX="320.0" layoutY="411.0" prefHeight="27.0" prefWidth="209.0" text="Vehicle Type:" textFill="#52585d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="VehicleTypeLabel" layoutX="487.0" layoutY="411.0" prefHeight="27.0" prefWidth="189.0" textFill="#00907d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="VehicleTypeDropDown" layoutX="50.0" layoutY="396.0" onAction="#VehicleTypeDropDownHandler" prefHeight="57.0" prefWidth="245.0" promptText="Select Vehicle Type" />
+      <Label layoutX="320.0" layoutY="487.0" prefHeight="27.0" prefWidth="209.0" text="Horsepower:" textFill="#52585d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="HorsepowerLabel" layoutX="480.0" layoutY="487.0" prefHeight="27.0" prefWidth="189.0" textFill="#00907d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="562.0" prefHeight="27.0" prefWidth="209.0" text="Credit Score:" textFill="#52585d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="CreditScoreLabel" layoutX="480.0" layoutY="562.0" prefHeight="27.0" prefWidth="189.0" textFill="#00907d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="635.0" prefHeight="27.0" prefWidth="245.0" text="Annual Miles Driven:" textFill="#52585d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="AnnualMilesDrivenLabel" layoutX="568.0" layoutY="635.0" prefHeight="27.0" prefWidth="189.0" textFill="#00907d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="710.0" prefHeight="27.0" prefWidth="224.0" text="State of Residence:" textFill="#52585d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="StateLabel" layoutX="555.0" layoutY="710.0" prefHeight="27.0" prefWidth="189.0" textFill="#00907d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="HorsepowerField" layoutX="50.0" layoutY="472.0" onInputMethodTextChanged="#HorsepowerHandler" onKeyReleased="#HorsepowerHandler" prefHeight="57.0" prefWidth="245.0" promptText="Horsepower" />
+      <TextField fx:id="CreditScoreField" layoutX="50.0" layoutY="547.0" onKeyReleased="#CreditScoreHandler" prefHeight="57.0" prefWidth="245.0" promptText="Credit Score" />
+      <TextField fx:id="AnnualMilesDrivenField" layoutX="50.0" layoutY="620.0" onKeyReleased="#AnnualMilesDrivenHandler" prefHeight="57.0" prefWidth="245.0" promptText="Annual Miles Driven" />
+      <ComboBox fx:id="StateDropDown" layoutX="50.0" layoutY="695.0" onAction="#StateDropDownHandler" prefHeight="57.0" prefWidth="245.0" promptText="Select State of Residence" />
+      <Button fx:id="RunAnalysisButton" layoutX="775.0" layoutY="118.0" mnemonicParsing="false" onAction="#RunAnalysisButtonHandler" onMouseEntered="#RunAnalysisButtonHover" onMouseExited="#RunAnalysisButtonExit" prefHeight="55.0" prefWidth="189.0" style="-fx-background-color: blue;" text="Run Analysis" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="arrow" fitHeight="49.0" fitWidth="106.0" layoutX="816.0" layoutY="705.0" opacity="0.89" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@arrow.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="471.0" fitWidth="30.0" layoutX="779.0" layoutY="258.0" pickOnBounds="true">
+         <image>
+            <Image url="@colorbar.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="738.0" layoutY="214.0" prefHeight="545.0" prefWidth="6.0" style="-fx-background-color: #303336;" />
+      <VBox layoutX="1027.0" layoutY="214.0" prefHeight="545.0" prefWidth="6.0" style="-fx-background-color: #303336;" />
+      <Label layoutX="828.0" layoutY="201.0" prefHeight="27.0" prefWidth="125.0" text="Risk Level" textFill="#52585d" underline="true">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="1071.0" layoutY="201.0" prefHeight="27.0" prefWidth="125.0" text="Premiums" textFill="#52585d" underline="true">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="1071.0" layoutY="464.0" prefHeight="27.0" prefWidth="209.0" text="Projections" textFill="#52585d" underline="true">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="1071.0" layoutY="514.0" prefHeight="27.0" prefWidth="209.0" text="Projected Annual Claims:" textFill="#52585d">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1071.0" layoutY="574.0" prefHeight="88.0" prefWidth="182.0" text="Projected Likeliness of One or More Claims Annually:" textFill="#52585d" wrapText="true">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1071.0" layoutY="242.0" prefHeight="69.0" prefWidth="209.0" text="Suggested Annual Premium:" textFill="#52585d" wrapText="true">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="arrowText" layoutX="890.0" layoutY="716.0" opacity="0.8" prefHeight="27.0" prefWidth="125.0" text="Very Low" textFill="#1041a1">
+         <font>
+            <Font name="Arial Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="RiskLabel" layoutX="1164.0" layoutY="25.0" prefHeight="27.0" prefWidth="125.0" textFill="#52585d">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="779.0" layoutY="539.0" opacity="0.6" prefHeight="3.0" prefWidth="30.0" style="-fx-background-color: #303336;" />
+      <HBox layoutX="779.0" layoutY="351.0" opacity="0.6" prefHeight="3.0" prefWidth="30.0" style="-fx-background-color: #303336;" />
+      <HBox layoutX="779.0" layoutY="445.0" opacity="0.6" prefHeight="3.0" prefWidth="30.0" style="-fx-background-color: #303336;" />
+      <HBox layoutX="779.0" layoutY="633.0" opacity="0.6" prefHeight="3.0" prefWidth="30.0" style="-fx-background-color: #303336;" />
+      <Label fx:id="insurancePremiumLabel" layoutX="1071.0" layoutY="302.0" prefHeight="34.0" prefWidth="160.0" wrapText="true">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="1071.0" layoutY="336.0" prefHeight="34.0" prefWidth="209.0" text="Monthly:" textFill="#52585d" wrapText="true">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="insurancePremiumMonthlyLabel" layoutX="1071.0" layoutY="370.0" prefHeight="34.0" prefWidth="160.0" wrapText="true">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="annualClaimsLabel" layoutX="1071.0" layoutY="545.0" prefHeight="34.0" prefWidth="160.0" wrapText="true">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="likelinessOfClaimsLabel" layoutX="1071.0" layoutY="660.0" prefHeight="34.0" prefWidth="160.0" wrapText="true">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
